@@ -1,0 +1,33 @@
+{
+  "name": "gp",
+  "version": "1.0.0",
+  "description": "graduation project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/index.js"
+  },
+  "author": "Hussein Salah",
+  "license": "ISC",
+  "dependencies": {
+    "@vonage/server-sdk": "^2.10.11",
+    "axios": "^0.26.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.2",
+    "cors": "^2.8.5",
+    "express": "^4.17.2",
+    "formidable": "^2.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "messagebird": "^3.7.2",
+    "mongoose": "^6.2.3",
+    "multer": "^1.4.4",
+    "nexmo": "^2.9.1",
+    "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.15",
+    "validator": "^13.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

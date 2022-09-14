@@ -1,0 +1,53 @@
+.sidenav a,
+.dropdown_btn {
+  padding: 14px 8px 10px 21px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all 500ms;
+}
+.sidenav a:hover {
+  color: #2a7f82 !important;
+  font-weight: bold;
+  background-color: white !important;
+  border-radius: 8px;
+  margin-left: 6px;
+}
+.sidenav .a_section::after,
+.dropdown_btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  opacity: 30%;
+}
+
+.sidebar_navlink_content {
+      display: flex;
+      align-items: center;
+}
+
+.sidebar_navlink_content_img {
+  width: 15%;
+    margin-right: 10px;
+}
+
+.sidebar_navlink_content_img img {
+  width: 100%;
+}
+
+.sidebar_navlink_daily {
+  display: flex;
+  align-items: center;
+}

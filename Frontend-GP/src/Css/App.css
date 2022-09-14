@@ -1,0 +1,2001 @@
+.auth-layout {
+  height: 100vh;
+  background-color: #def2f3;
+}
+.main-layout {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  color: white;
+}
+.form-layout {
+  width: 100%;
+  margin: 0 auto;
+  height: 65vh;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  position: relative;
+}
+.image-layout {
+  position: relative;
+  height: 70vh;
+}
+
+.auth-layout .form-container {
+  height: 70vh;
+  width: 65%;
+  background-color: red;
+  border-radius: 45px;
+  box-shadow: #1cced687 7px 6px 5px 1px;
+  background-color: white;
+  padding: 20px;
+}
+.form-div {
+  height: fit-content;
+  width: 100%;
+  padding: 20px;
+}
+.img-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+}
+.img-div img {
+  width: 100%;
+  height: 70%;
+  border-radius: 15%;
+}
+.auth-layout-link {
+  width: 65%;
+  text-align: center;
+}
+.auth-layout-link a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-right: 30px;
+}
+
+.form-layout input {
+  outline: 0;
+  border-width: 0px 0 1px;
+  border-color: rgba(0, 0, 0, 0.295);
+  border-radius: 0;
+  padding: 5px;
+}
+.form-layout form input:focus {
+  box-shadow: none;
+  box-shadow: #1cced687 0px 3px 5px 1px;
+}
+.form_layout .input_div {
+  position: relative;
+}
+
+.auth_layout .svg-inline--fa {
+  position: absolute;
+  top: 11px;
+  opacity: 0.3;
+  right: 4px;
+  color: #3ea9ad;
+}
+.input-div input::placeholder {
+  font-size: 0.9em;
+}
+.auth-layout .form-check-label {
+  color: black;
+}
+.auth-layout .form-check-input {
+  border: 1px solid rgba(0, 0, 0, 0.295);
+}
+.welcome-div {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -350%) !important;
+  color: #2a7f82;
+  text-transform: uppercase;
+}
+.auth-layout .form-label {
+  color: black;
+}
+
+/* Start Footer */
+.footer {
+  position: relative;
+  z-index: 1;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(45deg, #012e40 10%, #3ca6a6 90%);
+  margin-top: 115px;
+}
+
+.footer-left,
+.footer-right {
+  display: inline-block;
+  color: white;
+  padding: 15px 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+
+.footer .icon {
+  margin-top: 4px;
+  padding-left: 15px;
+  color: white;
+}
+/* End Footer */
+
+/*==============================Start layout================================*/
+.layout {
+  margin-top: 60px;
+}
+
+.sidenav a,
+.dropdown-btn {
+  padding: 14px 8px 10px 21px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #f1f1f1;
+  opacity: 0.7;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+  transition: all 500ms;
+}
+.sidenav a:hover,
+.dropdown-btn:hover,
+.sidenav .active {
+  opacity: 100%;
+  color: white !important;
+  background-color: #026773 !important;
+}
+.sidenav .a-section::after,
+.dropdown-btn::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  background-color: white;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  opacity: 30%;
+}
+/* .active {
+  color: blue;
+} */
+
+.dropdown-container {
+  display: none;
+  background-color: #2a7f82;
+  padding-left: 8px;
+}
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+.add-fixed {
+  /* height: 97vh; */
+  height: calc(100vh - 61.7px);
+  width: 16.66666%;
+  position: fixed;
+  top: 61px;
+  background-color: #024959;
+  padding-top: 10px;
+}
+.remove-fixed {
+  width: 100%;
+  top: 61px;
+  background-color: #2a7f82;
+  overflow-x: hidden;
+}
+.align-right {
+  text-align: center;
+  margin-bottom: 6px;
+  margin-top: 6px;
+}
+.btn-toggle {
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.div-toggler {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: none;
+}
+
+/* Profile Hussein */
+.row {
+  --bs-gutter-x: 0 !important;
+}
+.profile-img {
+  height: 100px;
+  border-bottom: 1px solid black;
+  position: relative;
+  margin-bottom: 40px;
+}
+.profile-img .profile-span-img {
+  position: absolute;
+  bottom: -50px;
+  width: 10%;
+  background-color: white;
+  left: 180px;
+}
+.profile-img .profile-span-img img {
+  width: 100%;
+}
+.profile-img .profile-span-name {
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  left: 330px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 20%;
+  color: #2a7f82;
+}
+.profile-img .profile-span-spec {
+  position: absolute;
+  bottom: 0;
+  width: 10%;
+  left: 490px;
+  font-size: 15px;
+  font-weight: bold;
+  width: 20%;
+  color: #3ea9ad;
+}
+.profile-info {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+  padding: 10px;
+}
+.profile-info .profile-form {
+  width: 40%;
+  border: 2px solid #3ea9ad4f;
+  border-radius: 10px;
+  position: relative;
+}
+.profile-info .profile-form .edit-switch-btn {
+  background-color: white;
+  position: absolute;
+  right: 20px;
+  top: -15px;
+}
+.profile-info .profile-form .edit-switch-note {
+  background-color: white;
+  position: absolute;
+  right: 90px;
+  top: -15px;
+  color: rgb(158, 156, 156);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.profile-form form {
+  margin: 40px 20px;
+}
+.profile-form .edit-input {
+  margin-top: 15.1px;
+}
+.profile-form .edit-input .edit-label {
+  margin-bottom: 2px;
+}
+
+.profile-form .btn-edit {
+  margin-top: 10px;
+}
+.profile-form .btn-edit .btn {
+  background-color: #3ea9ad;
+  color: white;
+}
+.profile-form .btn-edit .btn-edit-save {
+  text-align: end;
+}
+
+.profile-form form .form-control,
+.profile-form form .form-control:disabled {
+  transition: all 1s;
+}
+
+/* addbloodp */
+
+@media screen and (max-width: 995px) {
+  .add-bloodp-gluc {
+    width: 95% !important;
+    margin: 20px auto !important;
+  }
+  /* .bp-header, .gluc-header {
+    top: 68% !important;
+    left: 26% !important;
+    font-size: 22px !important;
+} */
+  .blood-gluc-form .form-group {
+    left: 15% !important;
+  }
+}
+@media screen and (min-width: 416px) and (max-width: 550px) {
+  .bp-img,
+  .gluc-img {
+    top: 54% !important;
+    left: 5% !important;
+  }
+  /* .gluc-img {
+    top: 60% !important;
+    left: 5% !important;
+  } */
+  .bp-img img,
+  .gluc-img img {
+    /* height: 95px !important; */
+    height: 90% !important;
+  }
+  .blood-gluc-form .add-btn {
+    left: 10% !important;
+  }
+}
+@media screen and (min-width: 550px) and (max-width: 680px) {
+  .bp-header,
+  .gluc-header {
+    top: 66% !important;
+    left: 28% !important;
+    font-size: 25px !important;
+  }
+  .edit-examination-header {
+    top: 66% !important;
+    left: 2% !important;
+    font-size: 25px !important;
+  }
+  .bp-img,
+  .gluc-img {
+    top: 48% !important;
+    left: 7% !important;
+  }
+  .blood-gluc-form .add-btn {
+    left: 10% !important;
+  }
+}
+@media screen and (min-width: 680px) and (max-width: 805px) {
+  .bp-img,
+  .gluc-img {
+    top: 48% !important;
+    left: 7% !important;
+  }
+  /* .blood-gluc-form .form-control {
+  width: 95% !important;
+} */
+  .blood-gluc-form .add-btn {
+    left: 10% !important;
+  }
+}
+@media screen and (min-width: 805px) and (max-width: 995px) {
+  .blood-gluc-form .add-btn {
+    left: 10% !important;
+  }
+  .bp-header,
+  .gluc-header,
+  .allergy-header {
+    top: 68% !important;
+    left: 26% !important;
+    font-size: 22px !important;
+  }
+  .edit-examination-header {
+    top: 66% !important;
+    left: 2% !important;
+    font-size: 25px !important;
+  }
+  .bp-img,
+  .gluc-img,
+  .allergy-img {
+    top: 48% !important;
+    left: 5% !important;
+  }
+
+  .bp-img img,
+  .gluc-img img,
+  .allergy-img img {
+    height: 95px !important;
+  }
+  .blood-gluc-form,
+  .allergy-form .form-group {
+    left: 15% !important;
+  }
+
+  .blood-gluc-form .form-group,
+  .allergy-form .form-group,
+  .edit-examination-form .form-group {
+    left: 15% !important;
+  }
+
+  .blood-gluc-form .add-btn,
+  .edit-examination-form .add-btn {
+    left: 10% !important;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .bp-img,
+  .gluc-img {
+    top: 67% !important;
+    left: 11% !important;
+  }
+  .bp-img img,
+  .gluc-img img {
+    height: 65% !important;
+  }
+  .blood-gluc-form .form-control,
+  .edit-examination-form .form-control {
+    width: 100% !important;
+  }
+  .bp-header,
+  .gluc-header {
+    top: 72% !important;
+    left: 31% !important;
+    font-size: 20px !important;
+  }
+  .edit-examination-header {
+    top: 66% !important;
+    left: 2% !important;
+    font-size: 25px !important;
+  }
+  .blood-gluc-form .add-btn,
+  .edit-examination-form .add-btn {
+    left: 30% !important;
+  }
+}
+
+@media screen and (min-width: 995px) and (max-width: 1250px) {
+  .bp-img,
+  .gluc-img {
+    position: absolute !important;
+    top: 48% !important;
+    left: 9% !important;
+    height: 100% !important;
+  }
+}
+
+.bp-img-container,
+.gluc-img-container,
+.allergy-img-container,
+.edit-examination-container {
+  height: 110px;
+  background-color: #3ea9ad;
+  border-bottom: 2px solid #2a7f82;
+  position: relative;
+}
+
+.bp-img,
+.gluc-img,
+.allergy-img {
+  position: absolute;
+  top: 48%;
+  left: 13%;
+  height: 100%;
+}
+
+.bp-img-container .bp-img img,
+.gluc-img-container .gluc-img img,
+.allergy-img-container .allergy-img img {
+  height: 85%;
+}
+.bp-header,
+.gluc-header,
+.allergy-header {
+  position: absolute;
+  top: 65%;
+  left: 28%;
+  font-size: 25px;
+  font-weight: bold;
+  color: white;
+}
+.edit-examination-header {
+  position: absolute;
+  top: 66% !important;
+  left: 2% !important;
+  font-size: 25px !important;
+  font-weight: bold;
+  color: white;
+}
+.add-bloodp-gluc,
+.add-allergy,
+.edit-examination {
+  width: 70%;
+  margin: 75px auto;
+  background-color: whitesmoke;
+}
+
+.blood-gluc-form .bloodp-gluc-form,
+.allergy-form,
+.allergy-form,
+.edit-examination-form,
+.edit-exam-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.blood-gluc-form .form-group,
+.allergy-form .form-group,
+.allergy-form .form-group,
+.edit-examination-form .form-group {
+  width: 45%;
+}
+
+.form-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.blood-gluc-form .form-control,
+.allergy-form .form-control,
+.edit-examination-form .form-control,
+.blood-gluc-form .form-select {
+  width: 80%;
+}
+
+.blood-gluc-form .form-control:focus,
+.blood-gluc-form .form-select:focus,
+.add-examination-form .form-control:focus,
+.prescription-view .form-control:focus,
+.allergy-form .form-control:focus,
+.add-surgery-form .form-control:focus,
+.edit-examination-form .form-control:focus {
+  box-shadow: 0 0 0 3px rgb(62 169 173 / 50%);
+  border-color: #3ea9ad;
+}
+
+.blood-gluc-form .formlabel,
+.requests-view .formlabel,
+.prescription-view .formlabel,
+.requests-view .formlabel,
+.edit-examination-form .form-label {
+  display: flex;
+  justify-content: start;
+  /* align-items: center; */
+}
+
+.blood-gluc-form label,
+.add-examination-form label,
+.prescription-view .formlabel label,
+.allergy-form label,
+.add-surgery-form label,
+.requests-view .formlabel label,
+.edit-examination-form label {
+  color: #2a7f82;
+  font-weight: bold;
+}
+.allergy-form label {
+  margin-left: -20px;
+  margin-top: 5px;
+}
+.blood-gluc-form .add-btn,
+.allergy-form .add-btn {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  left: 15%;
+  transform: translateX(-30%);
+  margin-bottom: 20px;
+}
+.edit-examination-form .add-btn {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  left: 45%;
+  transform: translateX(-30%);
+  margin-bottom: 20px;
+}
+.blood-gluc-form button,
+.blood-gluc-form button:hover,
+.add-examination-form button,
+.add-examination-form button:hover,
+.allergy-form button,
+.allergy-form button:hover,
+.add-surgery-form button,
+.add-surgery-form button:hover,
+.edit-examination-form button:hover {
+  background-color: #2a7f82;
+  color: #def2f3;
+  border-color: #2a7f82;
+}
+/* addglucose */
+.blood-gluc-form .form-group,
+.allergy-form .form-group,
+.edit-examination-form .form-group {
+  position: relative;
+  left: 18%;
+  margin-top: 35px;
+  transform: translateX(-30%);
+}
+
+/*========== ===================== ====================== =============*/
+
+.hidden-content {
+  visibility: hidden;
+}
+
+.shown-content {
+  visibility: visible;
+  transition: all 5s ease-in-out;
+}
+
+.authentication {
+  padding: 2px;
+}
+.auth-link .active {
+  border-bottom: 2px solid #2a7f82 !important;
+  color: #2a7f82 !important;
+  padding-bottom: 2px;
+}
+
+.auth-link a {
+  text-decoration: none;
+  color: #3ea9ad !important;
+  font-weight: bold;
+}
+.dis-none {
+  display: none;
+}
+
+.remove-dis-none {
+  display: "";
+}
+
+.btns-registers-steps {
+  background-color: #3ea9ad !important;
+  border-color: #3ea9ad !important;
+  color: white !important;
+  text-align: right;
+}
+.btns-registers-steps:hover {
+  color: white;
+}
+
+.container-fluid {
+  display: flex;
+  justify-content: center;
+}
+.search-user {
+  width: 500px;
+}
+
+.has-search .form-control {
+  padding-left: 2.375rem;
+}
+
+.has-search .form-control-navbar {
+  position: absolute;
+  z-index: 2;
+  display: block;
+  width: 2.375rem;
+  height: 2.375rem;
+  line-height: 2.375rem;
+  text-align: center;
+  pointer-events: none;
+  color: #aaa;
+}
+.navbar .navbar-brand span {
+  color: #def2f3;
+  font-weight: bold;
+}
+
+.search {
+  width: 220px;
+  margin-right: 15px;
+}
+/*=============================================================== Donia-css ================================================================ */
+/* welcomearea */
+.welcome-area {
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/card3.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 100vh;
+}
+.welcome-area::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0 0 0 / 70%);
+}
+
+.welcome-area .text {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-55%);
+  text-align: center;
+  width: 100%;
+}
+
+.welcome-area .text h1 {
+  font-weight: 600;
+  font-size: 55px;
+  line-height: 54px;
+  letter-spacing: 1.4px;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.welcome-area .text p {
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+  line-height: 28px;
+  letter-spacing: 0.25px;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+@media (max-width: 991px) {
+  .welcome-area .text {
+    top: 65% !important;
+    transform: perspective(1px) translateY(-60%) !important;
+    text-align: center;
+  }
+  .welcome-area .text h1 {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  .welcome-area .text h1 span {
+    color: #fff;
+  }
+  .welcome-area .text p {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 820px) {
+  .welcome-area .text {
+    top: 65% !important;
+    transform: perspective(1px) translateY(-60%) !important;
+  }
+  .welcome-area .text h1 {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 15px;
+  }
+  .welcome-area .text p {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 765px) {
+  .welcome-area {
+    margin-bottom: 100px;
+  }
+  .welcome-area .text {
+    top: 50% !important;
+    transform: perspective(1px) translateY(-50%) !important;
+    text-align: center;
+  }
+  .welcome-area .text .buttons {
+    display: none;
+  }
+  .welcome-area .text h1 {
+    font-weight: 800px;
+    font-size: 24px !important;
+    line-height: 30px !important;
+    margin-bottom: 30px !important;
+  }
+  .welcome-area .text h1 span {
+    color: #fff;
+  }
+  .welcome-area .text p {
+    text-align: center;
+    color: #fff;
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 40px;
+  }
+}
+a.main-button-slider {
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 15px;
+  padding: 21px 20px;
+  background-color: #206d76;
+  text-transform: uppercase;
+  color: #fff;
+  letter-spacing: 0.25px;
+}
+a:hover {
+  color: white !important;
+}
+
+/* 
+---------------------------------------------
+features
+--------------------------------------------- 
+*/
+.card {
+  cursor: pointer;
+  height: 100%;
+  display: block;
+  background: #ffffff;
+  box-shadow: 0px 0px 3px 0px rgb(152, 151, 151);
+  border-radius: 12px !important;
+  padding: 30px;
+  position: relative;
+  margin-bottom: 30px;
+  margin-right: 15px;
+}
+
+.card .icon {
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: auto;
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 50%;
+}
+.card img{
+  width: 50%;
+}
+.card .icon .svg-inline--fa {
+  font-size: 50px;
+  color: #206d76;
+}
+
+.card .title {
+  font-weight: bold;
+  font-size: 18px;
+  color: #1e1e1e;
+  letter-spacing: 0.7px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+}
+
+.card p {
+  font-weight: 400;
+  font-size: 13px;
+  color: #777;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  position: relative;
+  z-index: 2;
+}
+
+/* .card a {
+  float: right;
+  position: relative;
+  z-index: 2;
+} */
+
+.home-feature {
+  padding-bottom: 0px;
+  padding-top: 130px;
+  margin-top: -220px;
+  z-index: 9;
+}
+
+@media (max-width: 991px) {
+  .home-feature {
+    padding-bottom: 0px;
+    padding-top: 0px;
+    margin-top: 0px;
+    z-index: 9;
+  }
+}
+
+.section-container {
+  /* background-color: darkcyan; */
+  margin-top: 90px;
+  margin-bottom: 70px;
+}
+.section-container img{
+  width: 63%;
+}
+.section-text {
+  align-self: center;
+
+}
+.section-title {
+  margin-bottom: 30px;
+  color: #008b8b;
+  font-weight: bold;
+  margin-top: 50px;
+}
+.right-text , .left-text{
+  font-weight: 400;
+  font-size: 16px;
+  color: #008b8b;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+/* .left-text {
+  font-weight: 400;
+  font-size: 16px;
+  color: #008b8b;
+  line-height: 28px;
+  letter-spacing: 1px;
+} */
+
+/* -==========================================addprescription ========================================*/
+
+.pres-container,
+.examination-container,
+.surgery-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  border-radius: 15px 15px 0px 0px;
+  background-color: #3ea9ad;
+}
+
+.pres-header,
+.add-examination-header,
+.add-surgery-header {
+  font-weight: bold;
+  color: white;
+  /* margin-left: 20px;
+  margin-bottom: 5px; */
+  font-size: 25px;
+}
+
+.additions-container {
+  height: calc(100vh - 61.7px);
+  /* position: relative; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.add-prescription,
+.add-examination,
+.add-surgery {
+  width: 60%;
+}
+
+.prescripton-form .pres-form,
+.add-examination .add-examination-form,
+.add-surgery .add-surgery-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  border-radius: 0px 0px 15px 15px;
+  /* height: 100%; */
+  /* width: 90%;
+  margin: auto; */
+}
+
+.prescripton-form .form-group,
+.add-examination .add-examination-form .form-group,
+.add-surgery .add-surgery-form .form-group {
+  width: 45%;
+  margin-top: 30px;
+}
+.form-container {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* .prescripton-form .form-control {
+  width: 80%;
+} */
+
+.prescripton-form .form-control:focus {
+  box-shadow: 0 0 0 3px rgb(62 169 173 / 50%);
+  border-color: #3ea9ad;
+}
+
+.prescripton-form .formlabel,
+.add-examination .add-examination-form .formlabel,
+.add-surgery .add-surgery-form .formlabel {
+  /* display: flex;
+  justify-content: start; */
+  /* align-items: center; */
+  display: flex;
+  justify-content: start;
+  margin-bottom: 10px;
+}
+
+.prescripton-form label {
+  color: #2a7f82;
+  font-weight: bold;
+}
+
+.prescripton-form .add-btns {
+  margin-bottom: 10px;
+}
+
+/* .prescripton-form .add-btns .add-remove-pres {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  left: 15%;
+  transform: translateX(-30%);
+} */
+
+.prescripton-form .add-btns .add-remove-pres button {
+  margin-right: 10px;
+}
+
+.pres-form .form-group .submit-pres,
+.add-examination .add-examination-form .add-btn,
+.add-surgery .add-surgery-form .add-btn {
+  /* display: flex;
+  justify-content: end;
+  position: relative;
+  left: 15%;
+  transform: translateX(-30%);
+  margin-bottom: 5px; */
+  margin-bottom: 30px;
+}
+
+.pres-form .form-group .submit-pres button,
+.add-examination .add-examination-form .add-btn button,
+.add-surgery .add-surgery-form .add-btn button {
+  width: 100%;
+}
+
+.prescripton-form button,
+.prescripton-form button:hover {
+  background-color: #2a7f82;
+  color: #def2f3;
+  border-color: #2a7f82;
+}
+
+.add-remove-pres button:focus,
+.submit-pres button:focus {
+  box-shadow: 0 0 0 3px rgb(62 169 173 / 50%) !important;
+}
+/* ===============================bloodpreasure============================= */
+.preasureview {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.preasureview .preasureview-header {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: #2a7f82;
+}
+.preasureview-table {
+  margin-left: -18px;
+}
+
+.preasureview .preasureview-header img {
+  width: 60px;
+  margin-right: 15px;
+}
+.preasureview .preasureview-button button {
+  background-color: transparent !important;
+  color: #2a7f82;
+  font-weight: bold;
+  padding: 8px 12px;
+  box-shadow: 0px 0px 4px 0px #2a7f82;
+  border-color: #2a7f82;
+  border-radius: 10px;
+  border: none;
+}
+
+.add-preasureview-btn a {
+  background-color: #2a7f82 !important;
+  border-color: #2a7f82 !important;
+}
+
+.preasureview .preasureview-data {
+  width: 97%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.preasureview .preasureview-data .add-preasureview-btn {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 10px;
+}
+
+/* ================================Glucose====================================== */
+.glucoseview {
+  /* text-align: center; */
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.glucoseview .glucoseview-header {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: #2a7f82;
+}
+.glucoseview-table {
+  margin-left: -18px;
+}
+
+.glucoseview .glucoseview-header img {
+  width: 60px;
+  margin-right: 15px;
+}
+.glucoseview .glucoseview-button button {
+  background-color: transparent !important;
+  color: #2a7f82;
+  font-weight: bold;
+  padding: 8px 12px;
+  box-shadow: 0px 0px 4px 0px #2a7f82;
+  border-color: #2a7f82;
+  border-radius: 10px;
+  border: none;
+}
+
+.add-glucoseview-btn a {
+  background-color: #2a7f82 !important;
+  border-color: #2a7f82 !important;
+  /* box-shadow: 0 0 0 3px rgb(62 169 173 / 50%) !important; */
+}
+
+.glucoseview .glucoseview-data {
+  width: 97%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.glucoseview .glucoseview-data .add-glucoseview-btn {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 10px;
+}
+/* ======================================Allergy============================================ */
+
+.data-container {
+  height: 585px;
+  display: flex;
+  align-items: center;
+}
+.allergy-table {
+  margin-right: 35px;
+}
+/* ========================================Admin========================================== */
+.content .table {
+  padding: 0 70px;
+}
+.content .request-table {
+  margin-top: 100px;
+}
+.show-request-btn button,
+.accept-request-btn button,
+.decline-request-btn button,
+.show-request-btn button:hover,
+.accept-request-btn button:hover,
+.decline-request-btn button:hover {
+  background-color: #2a7f82;
+  border-color: #2a7f82;
+  padding: 3px 10px;
+}
+
+.show-request-btn button:focus,
+.accept-request-btn button:focus,
+.decline-request-btn button:focus {
+  box-shadow: 0 0 0 3px rgb(62 169 173 / 50%) !important;
+}
+
+/* ======================================================all prescriptions===================================================== */
+
+.Prescriptions .prescriptions-header {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: #2a7f82;
+  margin-top: 20px;
+}
+.prescriptions .allprescriptions-data {
+  width: 97%;
+  margin: auto;
+  margin-top: 15px;
+}
+.allprescriptions-table {
+  margin: 20px;
+}
+
+/* 
+---------------------------------------------
+parallax & home seperator
+--------------------------------------------- 
+*/
+.mini {
+  min-height: 215px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background: linear-gradient(45deg, #012e40 10%, #3ca6a6 90%);
+  margin-top: 80px;
+}
+
+.mini:before {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  opacity: 0.95;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  /* background-image: url(../images/work-process-bg.png); */
+  z-index: 2;
+  top: -20%;
+  left: -20%;
+}
+
+.mini .mini-content {
+  position: relative;
+  z-index: 3;
+}
+
+.mini .mini-content .info {
+  text-align: center;
+  color: #fff;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.mini .mini-content .info small {
+  display: block;
+  font-weight: 400;
+  font-size: 13px;
+  margin-bottom: 5px;
+}
+
+.mini .mini-content .info strong {
+  font-weight: 700;
+  font-size: 17px;
+  margin-bottom: 40px;
+  display: block;
+  text-decoration: none;
+
+}
+
+.mini .mini-content .info h1 {
+  color: white;
+  font-weight: 500;
+  font-size: 35px;
+  letter-spacing: 0.25px;
+  margin-bottom: 30px;
+}
+
+.mini .mini-content .info p {
+  letter-spacing: 1px;
+  margin-bottom: 40px;
+  color: white;
+  letter-spacing: 0.25px;
+  line-height: 26px;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+
+
+.mini .mini-content .mini-box {
+  display: block;
+  background: #fff;
+  padding: 35px;
+  border-radius: 20px;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.08);
+  margin-bottom: 30px;
+  position: relative;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  text-align: center;
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.mini .mini-content .mini-box:hover {
+  margin-top: -10px;
+}
+
+.mini .mini-content .mini-box:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: #fff;
+  width: 100%;
+  opacity: 0.15;
+  height: 100%;
+  bottom: -10px;
+  left: 0px;
+  right: -20px;
+  margin: auto;
+  border-radius: 20px;
+}
+
+.mini .mini-content .mini-box i {
+  display: block;
+  font-size: 20px;
+}
+.mini .mini-content .mini-box img{
+ width: 50%;
+}
+.mini .mini-content .mini-box span {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #777;
+  letter-spacing: 0.75px;
+}
+
+.mini .mini-content .mini-box strong {
+  display: block;
+  font-weight: 500;
+  font-size: 17px;
+  color: #2a7f82;
+  letter-spacing: 0.25px;
+  margin-bottom: 5px;
+  margin-top: 7px;
+
+}
+.content {
+  background: linear-gradient(45deg, #012e40 10%, #3ca6a6 90%);
+  margin-top: 50px;
+}
+.counter {
+  overflow: hidden;
+  position: relative;
+}
+
+.counter:before {
+  content: "";
+  position: absolute;
+  width: 140%;
+  height: 140%;
+  opacity: 0.9;
+  /* background-image: url(../images/fun-facts-bg.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  z-index: 2;
+  top: -20%;
+  left: -20%;
+}
+
+.counter .content {
+  position: relative;
+  z-index: 3;
+  width: 100%;
+}
+
+.counter .content .count-item {
+  height: 340px;
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.counter .content .count-item.decoration-bottom {
+  position: relative;
+}
+
+.counter .content .count-item.decoration-bottom:after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 32px;
+  top: 160px;
+  left: 70%;
+  /* background: url(../images/circle-dec.png) center center no-repeat; */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.counter .content .count-item.decoration-top {
+  position: relative;
+}
+
+.counter .content .count-item.decoration-top:after {
+  content: "";
+  position: absolute;
+  width: 70%;
+  height: 32px;
+  top: 140px;
+  left: 70%;
+  /* background: url(../images/circle-dec.png) center center no-repeat; */
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.counter .content .count-item:hover strong {
+  margin-top: 110px;
+}
+
+.counter .content .count-item strong {
+  display: block;
+  text-align: center;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0.25px;
+  margin-bottom: 10px;
+  color: #fff;
+  margin-top: 120px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.counter .content .count-item span {
+  display: block;
+  text-align: center;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+  letter-spacing: 0.25px;
+}
+
+@media (max-width: 991px) {
+  .parallax {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    min-height: auto;
+  }
+  .parallax .content {
+    position: relative !important;
+    top: 0% !important;
+    transform: perspective(1px) translateY(0%) !important;
+  }
+  .counter {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .counter .content {
+    position: relative !important;
+    top: 0% !important;
+    transform: perspective(1px) translateY(0%) !important;
+  }
+  .counter .content .count-item {
+    height: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .counter .content .count-item:hover strong {
+    margin-top: 0px;
+  }
+  .counter .content .count-item:before {
+    display: none;
+  }
+  .counter .content .count-item:after {
+    display: none;
+  }
+  .counter .content .count-item strong {
+    margin-top: 0px;
+  }
+}
+
+/* 
+---------------------------------------------
+team
+--------------------------------------------- 
+*/
+
+.center-heading {
+  margin-top: 60px;
+  text-align: center;
+}
+
+.team-item {
+  background: #fff;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 30px;
+  padding-bottom: 25px;
+  margin: 10px;
+}
+
+.team-item:hover .team-content .team-info {
+  margin-left: 30px;
+}
+
+.team-item i {
+  display: block;
+  margin-left: 25px;
+  margin-top: 25px;
+  font-size: 30px;
+  color: #4e47de;
+  text-align: center;
+}
+
+.team-item .user-image {
+  width: 60px;
+  height: 60px;
+  overflow: hidden;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  border-radius: 100px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  margin-left: 25px;
+  float: left;
+}
+.team-item .user-image img {
+  width: 100%;
+}
+
+.team-item .team-content {
+  text-align: left;
+  overflow: hidden;
+}
+
+.team-item .team-content .team-info {
+  float: left;
+  margin-left: 20px;
+  margin-top: 8px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.team-item .team-content .team-info .user-name {
+  display: block;
+  font-weight: 400;
+  font-size: 17px;
+  color: #1e1e1e;
+  letter-spacing: 0.25px;
+  margin-bottom: 5px;
+}
+
+.team-item .team-content .team-info span {
+  display: block;
+  font-weight: 400;
+  font-size: 15px;
+  color: #008b8b;
+  letter-spacing: 0.25px;
+}
+
+.team-item .team-content p {
+  margin-top: 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 25px;
+  font-weight: 400;
+  font-size: 15px;
+  color: #777;
+  letter-spacing: 0.6px;
+  line-height: 26px;
+}
+
+/* ======================================================================================================================================= */
+
+/* ==============================Zeinab CSS============================== */
+/* ===============Examination===================== */
+.examination .examination-filter {
+  /* text-align: center; */
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+.examination .examination-filter .examination-filter-header {
+  font-weight: bold;
+  font-size: 25px;
+  padding-bottom: 10px;
+  color: #2a7f82;
+}
+
+.examination .examination-filter .examination-filer-button button {
+  background-color: transparent !important;
+  color: #2a7f82;
+  font-weight: bold;
+  padding: 8px 12px;
+  box-shadow: 0px 0px 4px 0px #2a7f82;
+  border-color: #2a7f82;
+  border-radius: 10px;
+  border: none;
+}
+
+.departments-filter {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.department-container .department-name {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+}
+
+.department-container .department-name span {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 8px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.popup-close,
+.add-examination-btn a,
+.add-surgery-btn a,
+.edit-exam-form button {
+  background-color: #2a7f82 !important;
+  border-color: #2a7f82 !important;
+  /* box-shadow: 0 0 0 3px rgb(62 169 173 / 50%) !important; */
+}
+.edit-delete-btns .edit-btn a {
+  background-color: #2a7f82 !important;
+  border-color: #2a7f82 !important;
+}
+.examination .examination-filter .examination-filer-button button:focus,
+.popup-close:focus,
+.add-examination-form .add-btn button:focus,
+.view-prescription-btn button:focus,
+.filter-examination-btn button:focus,
+.add-examination-btn a:focus,
+.add-surgery-form .add-btn button:focus,
+.add-surgery-btn a:focus,
+.edit-delete-btns .edit-btn button:focus {
+  box-shadow: 0 0 0 3px rgb(62 169 173 / 50%) !important;
+}
+
+.examination .examination-data,
+.surgery .surgery-data {
+  width: 97%;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.examination .examination-data .add-examination-btn,
+.surgery .surgery-data .add-surgery-btn {
+  display: flex;
+  justify-content: end;
+  padding-bottom: 10px;
+}
+
+/* .surgery-container {
+  display: flex;
+  align-items: end;
+  height: 100px;
+  background-color: #3ea9ad;
+  border-bottom: 2px solid #2a7f82;
+}
+
+.add-surgery-header {
+  display: flex;
+  align-content: baseline;
+  font-weight: bold;
+  color: white;
+  margin-left: 20px;
+  margin-bottom: 5px;
+  font-size: 25px;
+} */
+
+.add-examination .form-group,
+.add-surgery .form-group {
+  margin-top: 35px;
+}
+
+.add-examination-form .form-control,
+.add-surgery-form .form-control {
+  width: 100%;
+}
+
+/* .add-surgery-form .add-btn {
+  display: flex;
+  justify-content: end;
+  position: relative;
+  left: 30%;
+  transform: translateX(-30%);
+  margin-bottom: 20px;
+} */
+
+.view-prescription-btn button,
+.view-prescription-btn button:hover {
+  background-color: #2a7f82;
+  border-color: #2a7f82;
+  padding: 2px 6px;
+}
+
+.filter-examination-btn {
+  margin-left: 5px;
+}
+.filter-examination-btn button,
+.filter-examination-btn button:hover {
+  background-color: #2a7f82 !important;
+  border-color: #2a7f82 !important;
+}
+.filter-examination-input {
+  width: 25%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #2a7f82;
+  -webkit-appearance: none;
+  appearance: none;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.filter-examination-input:focus {
+  box-shadow: 0 0 0 3px rgb(62 169 173 / 50%);
+  border-color: #2a7f82 !important;
+  outline: none;
+}
+
+.TUEFO {
+  padding-right: 0px !important;
+}
+.prescription-view,
+.requests-view {
+  width: 90%;
+  margin: auto;
+}
+.prescription-view .prescription-container {
+  display: flex;
+}
+
+.prescription-view .form-control,
+.requests-view .form-control {
+  width: 90%;
+}
+
+.surgery .surgery-filter {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 40px;
+  padding-bottom: 10px;
+  color: #2a7f82;
+  margin-top: 20px;
+}
+
+.loadingPage {
+  height: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/*===Hussein====*/
+.graph-title {
+  color: #8e8e8e;
+  text-transform: uppercase;
+}
+/* .graph-link {
+  position: relative;
+  top: 60px;
+  z-index: 10;
+} */
+.graph-link a {
+  border-radius: 4px;
+  text-decoration: none;
+  color: #238274;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.graph-link a:hover {
+  color: #10666a !important;
+}
+
+.requests-view .form-container {
+  display: flex;
+  justify-content: start;
+}
+
+.requests-view .requests-container {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.requests-imgs .card {
+  margin-bottom: 0px;
+  padding: 15px;
+}
+
+.request-access-view .request-access-header {
+  background-color: #2a7f82;
+  color: white;
+  padding: 10px;
+  border: 2px solid gray;
+}
+
+/* .request-access-view .request-access-body {
+  padding: 10px;
+  border-width: 0px 2px 2px;
+  border-color: gray;
+  border-style: solid;
+} */
+
+.request-access-view .request-access-body div {
+  margin-bottom: 10px;
+}
+
+.request-access-view .request-access-body .request-access-btn {
+  background-color: #2a7f82;
+  border-color: #2a7f82;
+  padding: 5px 10px;
+  /* margin-top: 10px; */
+}
+
+.request-access-modal-title {
+  display: flex;
+}
+
+.request-access-modal-title .form-control:focus {
+  box-shadow: 0 0 0 3px rgb(62 169 173 / 50%);
+  border-color: #3ea9ad;
+}
+
+.request-access-modal-title .search-patient-btn {
+  margin-left: 5px;
+  background-color: #2a7f82 !important;
+  border-color: #2a7f82 !important;
+}
+
+.request-access-modal-title .search-patient-btn:focus {
+  box-shadow: 0 0 0 3px rgb(62 169 173 / 50%) !important;
+}
+
+.edit-delete-btns {
+  display: flex;
+  justify-content: center;
+}
+.edit-delete-btns .edit-btn button {
+  padding: 2px 5px;
+}
+.edit-delete-btns .delete-btn button {
+  padding: 2px 7px;
+}
+
+.edit-delete-btns div {
+  margin-left: 5px;
+}
+
+.view-prescription-btn .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  bottom: 95%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.view-prescription-btn .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+.view-prescription-btn:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+.child-height {
+  height: max-content;
+  margin: 20px 0px;
+}
+
+/* ============================================================ */
+.admin .hITlxo {
+  flex-grow: 1;
+  text-align: center;
+}
+
+/* accordion component */
+
+.accordion-button:not(.collapsed) {
+  color: #307b8c !important;
+  background-color: #def2f3cf !important;
+  transition: 700ms ease-in-out !important;
+  
+}
+
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(0) !important;
+}
+
+/* Steps component */
+
+.indexedStep {
+  color: white;
+  width: 20px;
+  height: 20px;
+  font-size: 12px;
+  background-color: rgba(211, 211, 211, 0.8);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.indexedStep.accomplished {
+  background-color: #3ea9ad;
+}
+
+.test {
+  position: absolute;
+  margin-top: 40px;
+  white-space: nowrap;
+}
+
+.steps {
+  margin-bottom: 35px;
+  padding: 0px 25px;
+}
+
+.RSPBprogressBar .RSPBprogression {
+  background: #3ea9ad !important;
+}
+
+.pending-request svg {
+  animation: spin infinite 3s linear;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dropdown-toggle::after {
+  display: none !important;
+}

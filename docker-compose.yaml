@@ -1,0 +1,29 @@
+version: "3"
+services:
+  mongo:
+    container_name: mongo
+    image: mongo
+    volumes:
+      - data:/data/db
+  backend:
+    container_name: nodejs
+    build: ./Backend-GP
+    volumes:
+      - ./Backend-GP/src:/backend/src
+      - ./Backend-GP/node_modules:/backend/node_modules
+    depends_on:
+      - mongo
+    ports:
+      - "8080:4000"
+  frontend:
+    build: ./Frontend-GP
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./Frontend-GP/src:/app/src
+    stdin_open: true
+    tty: true
+    depends_on:
+      - backend
+volumes:
+  data:
